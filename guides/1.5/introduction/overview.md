@@ -7,7 +7,7 @@ nav_order: 1
 hash: 51baf69993100c7ef40d097b02285ff28e4e16c9
 ---
 # 概要
-S
+
 Phoenix is a web development framework written in Elixir which implements the server-side Model View Controller (MVC) pattern. Many of its components and concepts will seem familiar to those of us with experience in other web frameworks like Ruby on Rails or Python's Django.
 
 Phoenixは、サーバー側のModel View Controller（MVC）パターンを実装するElixir製のWeb開発フレームワークです。 そのコンポーネントと概念の多くは、Ruby on RailsやPythonのDjangoのような他のWebフレームワークの経験がある私たちにとっては馴染みのあるものです。
@@ -18,19 +18,24 @@ Phoenixは、「開発者の高い生産性」と「高いアプリケーショ�
 
 If you are already familiar with Elixir, great! If not, there are a number of places to learn. The [Elixir guides](https://elixir-lang.org/getting-started/introduction.html) and the [Elixir learning resources page](https://elixir-lang.org/learning.html) are two great places to start.
 
-エリクサーにすでに親しみがあるなら、すばらしいです！ そうでない場合は、学ぶ場所がたくさんあります。 [Elixirガイド]（https://elixir-lang.org/getting-started/introduction.html）と[Elixir学習リソースページ]（https://elixir-lang.org/learning.html）の2つのツールは、開始するのに打って付けです。
+すでにElixirに精通している場合は、それはすばらしいことです！そうでない場合は、学ぶべき場所がたくさんあります。[Elixirガイド]（https://elixir-lang.org/getting-started/introduction.html）と[Elixir学習リソースページ]（https://elixir-lang.org/learning.html）の2つのツールは、学び始めるのにうってつけの場所です。
 
 The guides that you are currently looking at provide an overview of all parts that make Phoenix. Here is a rundown of what they provide:
 
-以下のガイドは、Phoenixを作るすべてのパーツの概要を提供します。 
+今ご覧になっているガイドは、Phoenixを作るすべてのパーツの概要を提供しています。 以下は、ガイドが提供しているものの概要です。
 
   * Introduction - the guides you are currently reading. They will cover how to get your first application up and running
 
-  * はじめに - the guides you are currently reading. They will cover how to get your first application up and running
+  * イントロダクション - 今ご覧になっているガイドです。どのように、最初のアプリケーションをインストールして、実行すれば良いのかをカバーしています。
 
   * Guides - in-depth guides covering the main components in Phoenix and Phoenix applications
 
+  * ガイド - 詳細なガイドは、PhoenixとPhoenixアプリケーションのコンポーネントをメインにカバーしています。
+
   * Real-time components - in-depth guides covering Phoenix's built-in real-time components
+
+  * リアルタイム コンポーネント - リアルタイム 
+
 
   * Testing - in-depth guides about testing
 

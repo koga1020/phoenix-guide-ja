@@ -4,11 +4,13 @@ version: 1.5
 group: introduction
 title: Overview
 nav_order: 1
-hash: 51baf699
+hash: 51baf69993100c7ef40d097b02285ff28e4e16c9
 ---
 # 概要
 
 Phoenix is a web development framework written in Elixir which implements the server-side Model View Controller (MVC) pattern. Many of its components and concepts will seem familiar to those of us with experience in other web frameworks like Ruby on Rails or Python's Django.
+
+Phoenixは、サーバーサイドのモデル、ビュー、コントローラー(MVC)パターンを実装したElixirによって書かれたWeb開発フレームワークです。Phoenixの多くのコンポーネントとコンセプトはRuby on RailsやPythonのDjangoのような他のWebフレームワークの経験と同様に親しむことができるでしょう。
 
 Phoenix provides the best of both worlds - high developer productivity _and_ high application performance. It also has some interesting new twists like channels for implementing realtime features and pre-compiled templates for blazing speed.
 

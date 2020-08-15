@@ -6,22 +6,23 @@ title: Deploying on Heroku
 nav_order: 3
 hash: ca2d5c412ad17743bd36b51f8aabc9b569ca1be7
 ---
-# Deploying on Heroku
+# Herokuへデプロイする
 
-## What we'll need
+## 必要なもの
 
-The only thing we'll need for this guide is a working Phoenix application. For those of us who need a simple application to deploy, please follow the [Up and Running guide](https://hexdocs.pm/phoenix/up_and_running.html).
+このガイドに必要なのは、動作するPhoenixアプリケーションだけです。簡単なアプリケーションをデプロイする必要がある場合は、[起動ガイド](https://hexdocs.pm/phoenix/up_and_running.html)に従ってください。
 
-## Goals
+## ゴール
 
-Our main goal for this guide is to get a Phoenix application running on Heroku.
+このガイドのゴールは、HerokuでPhoenixアプリケーションを起動させることです。
 
-## Limitations
 
-Heroku is a great platform and Elixir performs well on it. However, you may run into limitations if you plan to leverage advanced features provided by Elixir and Phoenix, such as:
+## 制限
 
-- Connections are limited.
-  - Heroku [limits the number of simultaneous connections](https://devcenter.heroku.com/articles/http-routing#request-concurrency) as well as the [duration of each connection](https://devcenter.heroku.com/articles/limits#http-timeouts). It is common to use Elixir for real-time apps which need lots of concurrent, persistent connections, and Phoenix is capable of [handling over 2 million connections on a single server](https://www.phoenixframework.org/blog/the-road-to-2-million-websocket-connections).
+Herokuは優れたプラットフォームであり、Elixirは優れたパフォーマンスを発揮します。ただし、ElixirとPhoenixが提供する次のような高度な機能を利用する場合は、制限が発生する可能性があります。
+
+- 接続が限られています。
+  - Herokuの制限は[同時接続数の制限](https://devcenter.heroku.com/articles/http-routing#request-concurrency)と[各接続の期間](https://devcenter.heroku.com/articles/limits#http-timeouts)です。通常、多くの同時持続的接続を必要とするリアルタイムアプリにElixirを使用され、Phoenixは[単一サーバーで200万を超える接続を処理する](https://www.phoenixframework.org/blog/the-road-to-2-million-websocket-connections)ことができます。 
 
 - Distributed clustering is not possible.
   - Heroku [firewalls dynos off from one another](https://devcenter.heroku.com/articles/dynos#networking). This means things like [distributed Phoenix channels](https://dockyard.com/blog/2016/01/28/running-elixir-and-phoenix-projects-on-a-cluster-of-nodes) and [distributed tasks](https://elixir-lang.org/getting-started/mix-otp/distributed-tasks.html) will need to rely on something like Redis instead of Elixir's built-in distribution.
